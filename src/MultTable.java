@@ -1,5 +1,7 @@
 public class MultTable {
     public static void main(String[] args) {
+        long start = System.nanoTime();
+        long end;
         int x = 1;
         int y = 1;
         System.out.println("MULTIPLICATION TABLE");
@@ -17,5 +19,7 @@ public class MultTable {
             x = 1;
             ++y;
         } while (y < 6);
+        end = System.nanoTime();
+        System.out.println((end - start));
     }
 }
